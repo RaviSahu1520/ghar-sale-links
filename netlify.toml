@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/p/*"
-  to = "https://360ghar.com/property/:splat"
-  status = 200
-  force = true
