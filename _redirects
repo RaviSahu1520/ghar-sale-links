@@ -1,1 +1,3 @@
-/p/*    https://360ghar.com/property/:splat    301
+# Serve fallback page for deep links (200 rewrite, NOT 301 redirect)
+# App intercepts before page loads; if not installed, user sees fallback
+/p/*    /p/index.html    200
