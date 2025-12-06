@@ -74,9 +74,16 @@
         // Extract property ID and redirect appropriately
         const path = window.location.pathname;
         const match = path.match(/\/p\/(.+)/);
+        
         if (match) {
             const propertyId = match[1];
+            
+            // Update the "View on Website" button
             document.getElementById('webLink').href = 'https://360ghar.com/property/' + propertyId;
+
+            // FORCE APP OPEN - Try to open via custom scheme (ghar360://) as a backup method
+            // This attempts to launch the app immediately if the HTTPS link fell through
+            window.location.href = 'ghar360://ghar.sale/p/' + propertyId;
         }
         
         // On Android, the app should intercept before this page loads
