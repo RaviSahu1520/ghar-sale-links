@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TEAM_ID.com.the360ghar.ghar360",
+        "paths": [
+          "/p/*",
+          "/property/*",
+          "/tour/*"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "TEAM_ID.com.the360ghar.ghar360"
+    ]
+  }
+}
